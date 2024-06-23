@@ -4,7 +4,7 @@ services:
       context: .
       target: builder
       dockerfile: ./API/Dockerfile
-    container_name: fastapi-application
+    container_name: api-fastapi
     environment:
       PORT: 8000
     ports:
