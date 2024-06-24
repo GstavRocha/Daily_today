@@ -10,6 +10,7 @@ RUN pip install --upgrade pip
 RUN echo "Instalando Requeriments"
 RUN pip install --no-cache-dir --upgrade -r /home/API/requirements.txt
 COPY ./API /home/API/
-CMD ["uvicorn","main:app","--host","127.0.0.1","--port","8080"]
+EXPOSE 8080
+CMD ["uvicorn","main:app","--host","127.0.0.1","--port","8080", "--workers","4"]
 
 
