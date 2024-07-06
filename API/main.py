@@ -5,4 +5,10 @@ app = FastAPI()
 
 @app.get('/')
 def getReady():
-    print({"hello":"world"})
+    return {"hello":"world"}
+
+@app.get('/test')
+def getTest():
+    return {"teste de rota":"rota teste"}
+
+getTest()
