@@ -10,5 +10,3 @@ def getReady():
 @app.get('/test')
 def getTest():
     return {"teste de rota":"rota teste"}
-
-getTest()
