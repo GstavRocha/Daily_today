@@ -1,4 +1,8 @@
 services:
+  postgres:
+    image: postgres_container
+    environment:
+      - POSTGRES_USER=value
   api:
     build:
       context: .
